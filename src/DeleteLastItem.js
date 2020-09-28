@@ -17,8 +17,8 @@ const DeleteLastItem = props => {
 };
 
 DeleteLastItem.propTypes = {
-	onDeleteLastItem: PropTypes.func.isRequired,
-  	buttonDisabled: PropTypes.func.isRequired
+  onDeleteLastItem: PropTypes.func.isRequired,
+  buttonDisabled: PropTypes.func.isRequired
 };
 
 export default DeleteLastItem;
