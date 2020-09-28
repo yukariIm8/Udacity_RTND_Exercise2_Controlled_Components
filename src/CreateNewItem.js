@@ -5,11 +5,11 @@ import PropTypes from 'prop-types';
 
 class CreateNewItem extends React.Component {
   state = {
-  	value: '',
+    value: '',
   };
    
   handleChange = event => {
-  	this.setState({ value: event.target.value });
+    this.setState({ value: event.target.value });
   };
 
   addItem = event => {
@@ -21,8 +21,8 @@ class CreateNewItem extends React.Component {
     return this.state.value === '';
   };
 
-	render() {
-      return (
+  render() {
+    return (
       <div>
         <form onSubmit={this.addItem}>
           <input
@@ -34,12 +34,12 @@ class CreateNewItem extends React.Component {
           <button disabled={this.inputIsEmpty()}>Add</button>
         </form>
       </div>      
-      );
-    }
+    );
+  }
 }
 
 CreateNewItem.propTypes = {
-	onAddItem: PropTypes.func.isRequired,
+  onAddItem: PropTypes.func.isRequired,
 };
 
 export default CreateNewItem;
