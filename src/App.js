@@ -17,7 +17,7 @@ class App extends React.Component {
   };
 
   handleDeleteLastItem = event => {
-      this.setState(prevState => ({ items: this.state.items.slice(0, -1) }));
+    this.setState(prevState => ({ items: this.state.items.slice(0, -1) }));
   };
 
   noItemsFound = () => {
@@ -32,12 +32,12 @@ class App extends React.Component {
           <h1 className="App-title">ReactND - Coding Practice</h1>
         </header>
         <h2>Shopping List</h2>
-		<CreateNewItem onAddItem={this.handleAddItem} />
-		<DeleteLastItem 
-			onDeleteLastItem={this.handleDeleteLastItem} 
-			buttonDisabled={this.noItemsFound()}
-		/>
-		<ItemList items={this.state.items} />
+        <CreateNewItem onAddItem={this.handleAddItem} />
+        <DeleteLastItem 
+          onDeleteLastItem={this.handleDeleteLastItem} 
+          buttonDisabled={this.noItemsFound()}
+        />
+      <ItemList items={this.state.items} />
       </div>
     );
   }
