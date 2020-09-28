@@ -3,7 +3,6 @@ import Item from './Item';
 import PropTypes from 'prop-types';
 
 /* Stateless functional component. */
-
 const ItemList = props => {
   return (
     <div>
